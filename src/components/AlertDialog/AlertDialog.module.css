@@ -1,0 +1,65 @@
+.background {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  background: rgba(128, 128, 128, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.background:hover {
+  cursor: pointer;
+}
+
+.alert {
+  position: relative;
+  background: white;
+  padding: 2rem;
+  border: 2px solid black;
+  border-radius: 0.8rem;
+  height: 110px;
+}
+.alert:hover {
+  cursor: default;
+}
+.alert .buttonsBlock {
+  position: absolute;
+  right: 15px;
+  bottom: 8px;
+  width: 110px;
+  display: flex;
+  justify-content: space-between;
+}
+.alert .buttonsBlock .cancel, .alert .buttonsBlock .success {
+  width: 50px;
+  padding: 0.4rem;
+  background: none;
+  border-radius: 0.5rem;
+}
+.alert .buttonsBlock .cancel:hover, .alert .buttonsBlock .success:hover {
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+.alert .buttonsBlock .success {
+  border: 2px solid green;
+}
+.alert .buttonsBlock .success:hover {
+  background: lightgreen;
+}
+.alert .buttonsBlock .cancel {
+  border: 2px solid red;
+}
+.alert .buttonsBlock .cancel:hover {
+  background: lightcoral;
+}
+
+@media screen and (max-width: 400px) {
+  .alert {
+    width: 95%;
+  }
+}
+
+/*# sourceMappingURL=AlertDialog.module.css.map */

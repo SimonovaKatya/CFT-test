@@ -1,0 +1,74 @@
+.container {
+  width: 220px;
+}
+
+.inputContainer {
+  display: flex;
+  height: 39px;
+  width: 100%;
+  border: 2px solid black;
+
+  .landName {
+    width: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid black;
+    background: white;
+
+    &:hover {
+      cursor: pointer;
+      background: whitesmoke;
+      transition: .2s ease;
+    }
+  }
+
+  .inputPhone {
+    flex-grow: 1;
+    border: none;
+    padding: .3rem;
+    font-size: 16px;
+    width: 100%;
+  }
+}
+
+%btn {
+  border: 2px solid grey;
+  background: white;
+  padding: .45rem;
+  font-size: 1.1rem;
+  margin-left: .8rem;
+}
+
+.btn{
+  @extend %btn;
+}
+
+.btnHoverPointer{
+  @extend %btn;
+
+  &:hover {
+    background: whitesmoke;
+    cursor: pointer;
+    transition: .2s ease;
+  }
+}
+
+.errorMessage {
+  float: right;
+  color: red;
+  font-size: 1.2rem;
+}
+
+.successMessage {
+  position: absolute;
+  width: 310px;
+  bottom: 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: lightgreen;
+  border: 2px solid green;
+  border-radius: 0.5rem;
+  padding: 0.4rem;
+  font-size: 1.1rem;
+}

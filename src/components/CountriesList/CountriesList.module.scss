@@ -1,0 +1,41 @@
+%list {
+  width: 100%;
+  border: 2px solid grey;
+  border-top: 0;
+  overflow-y: auto;
+  background: white;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+    background-color: whitesmoke;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+  }
+
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+    background-color: whitesmoke;
+  }
+}
+
+.openCountriesList {
+  @extend %list;
+  height: 140px;
+  animation: open-list .3s ease;
+}
+
+.closedCountriesList {
+  display: none;
+}
+
+@keyframes open-list {
+  from {
+    height: 0;
+  }
+  to {
+    height: 140px;
+  }
+}
+

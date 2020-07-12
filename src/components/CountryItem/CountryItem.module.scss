@@ -1,0 +1,20 @@
+li {
+  display: flex;
+
+  &:hover {
+    background: whitesmoke;
+    cursor: pointer;
+    outline: 2px solid grey;
+  }
+
+  .code {
+    width: 42px;
+    height: 23px;
+    text-align: center;
+  }
+
+  .info {
+    width: 200px;
+    padding-left: 5px;
+  }
+}

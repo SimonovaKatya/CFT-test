@@ -1,0 +1,38 @@
+.openCountriesList {
+  width: 100%;
+  border: 2px solid grey;
+  border-top: 0;
+  overflow-y: auto;
+  background: white;
+}
+.openCountriesList::-webkit-scrollbar {
+  width: 5px;
+  background-color: whitesmoke;
+}
+.openCountriesList::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+}
+.openCountriesList::-webkit-scrollbar-track {
+  -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+  background-color: whitesmoke;
+}
+
+.openCountriesList {
+  height: 140px;
+  animation: open-list 0.3s ease;
+}
+
+.closedCountriesList {
+  display: none;
+}
+
+@keyframes open-list {
+  from {
+    height: 0;
+  }
+  to {
+    height: 140px;
+  }
+}
+
+/*# sourceMappingURL=CountriesList.module.css.map */

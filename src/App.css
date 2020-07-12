@@ -1,0 +1,17 @@
+.App {
+  border: 2px solid grey;
+  border-radius: 1rem;
+  padding: 1rem;
+  position: relative;
+
+  height: 280px;
+  width: 338px;
+  background: linear-gradient(225deg, whitesmoke, white);
+}
+
+@media screen and (max-width: 350px) {
+  .App{
+    border: none;
+  }
+}
+
